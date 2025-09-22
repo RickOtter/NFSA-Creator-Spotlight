@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+ <link href="https://fonts.cdnfonts.com/css/panton" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <nav> <!--navigation bar -->
+            <div class="nav-container"> 
+              <ul class="sidebar"> <!--mobile sidebar-->
+                <li onclick="hideSidebar()">
+                  <a href="#" onclick="event.preventDefault();">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="currentColor">
+                    
+                      <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                      </svg>
+                  </a>
+                </li>
+    
+                <!--mobile sidebar links-->
+                <li><a href="#" onclick="scrollToBottom(event), hideSidebar()">ABOUT</a></li> <!--goes to bottom of page-->
+                <li><a href="collection.html">Help</a></li>
+                <li>
+                  <a
+                    >YOUR LIST<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="currentColor"
+                    >
+                      <path d="M480-371.92 267.69-584.23 296-612.54l184 183.77 184-183.77 28.31 28.31L480-371.92Z"/></svg>
+                  </a>
+                  
+                </li>
+              </ul>
+              
+              <!--desktop navigation links -->
+              <ul> 
+                <li class="logo"><img src="/assets/nfsa%20logo.png" alt="NFSA" width="230" height="60">
+                <li class="hideOnMobile">
+                  <a 
+                    >ABOUT
+                    
+                  </a>
+                  
+                </li>
+                <li class="hideOnMobile"> <!--desktop nav items dissapear on mobile-->
+                  <a href="collection.html">HELP</a></li>
+                <li class="hideOnMobile"><a href="#" onclick="scrollToBottom(event)">YOUR LIST</a></li> <!--goes to bottom of page-->
+                <li class="menu-button" onclick="showSidebar()">
+                  <a href="#" onclick="event.preventDefault();">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="currentColor">
+                      <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                      </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <section class="content">
+      <h3><div class="button-container">
+            <ul>
+
+            <li></li> <!-- placeholder--> 
+            <li><a href="origins.html" class="button"><svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="0 -890 960 960" width="29px" fill="currentColor"><path d="M400-116 36-480l364-364 34 34-330 330 330 330-34 34Z"/></svg>BACK TO COLLECTION</a>
+            </li>
+        </ul>
+        </div></h3>
+
+      <div class="text-container">
+        <div class="title"><h1>Creators & Artists</h1></div> <!--Page title-->
+      </div class="text-container">
+        
+
+    <!-- Search & Filters -->
+   <div class="filters">
+  <input type="text" id="searchbar" placeholder="Search..." />
+
+  <div class="filter-boxes">
+    <div class="filter" data-category="">All</div>
+    <div class="filter" data-category="film">Filmmakers</div>
+    <div class="filter" data-category="music">Musicians</div>
+    <div class="filter" data-category="art">Artists</div>
+    <div class="filter" data-category="broadcast">Broadcasters</div>
+  </div>
+</div>
+
+    <!-- Results container -->
+<div id="results">
+  <div class="card">
+    <div class="image-wrapper">
+      <img src="assets/person.jpg" alt="Placeholder">
+    </div>
+    <div class="tag">Filmmaker</div>
+  </div>
+
+  <div class="card">
+    <div class="image-wrapper">
+      <img src="assets/person.jpg" alt="Placeholder">
+    </div>
+    <div class="tag">Musician</div>
+  </div>
+
+  <div class="card">
+    <div class="image-wrapper">
+      <img src="assets/person.jpg" alt="Placeholder">
+    </div>
+    <div class="tag">Broadcaster</div>
+  </div>
+  
+  <div class="card">
+    <div class="image-wrapper">
+      <img src="assets/person.jpg" alt="Placeholder">
+    </div>
+    <div class="tag">Filmmaker</div>
+  </div>
+
+  <div class="card">
+    <div class="image-wrapper">
+      <img src="assets/person.jpg" alt="Placeholder">
+    </div>
+    <div class="tag">Musician</div>
+  </div>
+
+  <div class="card">
+    <div class="image-wrapper">
+      <img src="assets/person.jpg" alt="Placeholder">
+    </div>
+    <div class="tag">Broadcaster</div>
+  </div>
+
+  <div class="card">
+    <div class="image-wrapper">
+      <img src="assets/person.jpg" alt="Placeholder">
+    </div>
+    <div class="tag">Filmmaker</div>
+  </div>
+
+  <div class="card">
+    <div class="image-wrapper">
+      <img src="assets/person.jpg" alt="Placeholder">
+    </div>
+    <div class="tag">Musician</div>
+  </div>
+
+  <div class="card">
+    <div class="image-wrapper">
+      <img src="assets/person.jpg" alt="Placeholder">
+    </div>
+    <div class="tag">Broadcaster</div>
+  </div>
+
+  <div class="card">
+    <div class="image-wrapper">
+      <img src="assets/person.jpg" alt="Placeholder">
+    </div>
+    <div class="tag">Filmmaker</div>
+  </div>
+
+  <div class="card">
+    <div class="image-wrapper">
+      <img src="assets/person.jpg" alt="Placeholder">
+    </div>
+    <div class="tag">Musician</div>
+  </div>
+
+  <div class="card">
+    <div class="image-wrapper">
+      <img src="assets/person.jpg" alt="Placeholder">
+    </div>
+    <div class="tag">Broadcaster</div>
+  </div>
+</div>
+  
+  
+
+  </section class="content">
+  </body>
+
+      <!--javascript transitions-->
+      <script>
+        function showSidebar() {
+          document.querySelector(".sidebar").classList.add("active");
+        }
+  
+        function hideSidebar() {
+          document.querySelector(".sidebar").classList.remove("active");
+        }
+        
+        function scrollToBottom(event) {
+    event.preventDefault();
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  }
+      </script>
+
+</html>
