@@ -85,9 +85,14 @@
 <div id="results">
   <div class="card">
     <div class="image-wrapper">
-      <img src="assets/person.jpg" alt="Placeholder">
-    </div>
-    <div class="name-tag">Creator name</div><div class="tag">Broadcaster</div>
+      <img id="profile-img" />
+<h2 id="profile-title"></h2>
+<p id="profile-desc"></p>
+<script>
+  document.getElementById('profile-img').src = localStorage.getItem('profileImage');
+  document.getElementById('profile-title').textContent = localStorage.getItem('profileTitle');
+  document.getElementById('profile-desc').textContent = localStorage.getItem('profileDesc');
+</script>
   </div>
 
 

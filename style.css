@@ -81,7 +81,7 @@ nav > .nav-container > ul > li:first-child {
 .logo {
  
   filter: brightness(0) invert(1);
-  padding: 20px 30px;
+  padding: 20px 0;
 }
 
 
