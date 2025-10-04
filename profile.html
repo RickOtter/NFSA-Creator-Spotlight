@@ -18,7 +18,7 @@
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="40px"
-                      viewBox="0 -960 960 960"
+                      viewBox="http://www.w3.org/2000/svg"
                       width="40px"
                       fill="currentColor">
                     
@@ -36,7 +36,7 @@
               
               <!--desktop navigation links -->
               <ul> 
-                <li class="logo"><img src="/assets/nfsa%20logo.png" alt="NFSA" width="230" height="60">
+                <li class="logo"><a href="index.html"><img src="assets/nfsa%20logo.png" alt="NFSA" width="230" height="60"></a></li>
                 <li class="hideOnMobile">
                   <a 
                     >ABOUT
@@ -52,7 +52,7 @@
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="40px"
-                      viewBox="0 -960 960 960"
+                      viewBox="http://www.w3.org/2000/svg"
                       width="40px"
                       fill="currentColor">
                       <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
@@ -74,7 +74,7 @@
             <ul>
 
             <li></li> <!-- placeholder--> 
-            <li><a href="origins.html" class="button"><svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="0 -890 960 960" width="29px" fill="currentColor"><path d="M400-116 36-480l364-364 34 34-330 330 330 330-34 34Z"/></svg>BACK TO COLLECTION</a>
+            <li><a href="index.html" class="button"><svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="http://www.w3.org/2000/svg" width="29px" fill="currentColor"><path d="M400-116 36-480l364-364 34 34-330 330 330 330-34 34Z"/></svg>BACK TO COLLECTION</a>
             </li>
         </ul>
         </div></h3>
@@ -82,108 +82,19 @@
 
 
     <!-- Results container -->
-<div id="results">
+<div id="profile-container">
   <div class="card">
     <div class="image-wrapper">
-      <img id="profile-img" />
-<h2 id="profile-title"></h2>
-<p id="profile-desc"></p>
-<script>
-  document.getElementById('profile-img').src = localStorage.getItem('profileImage');
-  document.getElementById('profile-title').textContent = localStorage.getItem('profileTitle');
-  document.getElementById('profile-desc').textContent = localStorage.getItem('profileDesc');
-</script>
-  </div>
-
-
-</div>
-  
-
-
-
-<div id="results">
-  <div class="card">
-    <div class="image-wrapper">
-      <img src="assets/person.jpg" alt="Placeholder">
+      <img id="profile-img" alt="Profile Image" src="assets/person.jpg" />
     </div>
-    <div class="name-tag">Item name</div>
-  </div>
-
-  <div class="card">
-    <div class="image-wrapper">
-      <img src="assets/person.jpg" alt="Placeholder">
-    </div>
-    <div class="name-tag">Item Name</div>
-  </div>
-
-  <div class="card">
-    <div class="image-wrapper">
-      <img src="assets/person.jpg" alt="Placeholder">
-    </div>
-    <div class="name-tag">Item Name</div>
-  </div>
-  
-  <div class="card">
-    <div class="image-wrapper">
-      <img src="assets/person.jpg" alt="Placeholder">
-    </div>
-    <div class="name-tag">Item Name</div>
-  </div>
-
-  <div class="card">
-    <div class="image-wrapper">
-      <img src="assets/person.jpg" alt="Placeholder">
-    </div>
-    <div class="name-tag">Item Name</div>
-  </div>
-
-  <div class="card">
-    <div class="image-wrapper">
-      <img src="assets/person.jpg" alt="Placeholder">
-    </div>
-    <div class="name-tag">Item Name</div>
-  </div>
-
-  <div class="card">
-    <div class="image-wrapper">
-      <img src="assets/person.jpg" alt="Placeholder">
-    </div>
-    <div class="name-tag">Item Name</div>
-  </div>
-
-  <div class="card">
-    <div class="image-wrapper">
-      <img src="assets/person.jpg" alt="Placeholder">
-    </div>
-    <div class="name-tag">Item Name</div>
-  </div>
-
-  <div class="card">
-    <div class="image-wrapper">
-      <img src="assets/person.jpg" alt="Placeholder">
-    </div>
-    <div class="name-tag">Item Name</div>
-  </div>
-
-  <div class="card">
-    <div class="image-wrapper">
-      <img src="assets/person.jpg" alt="Placeholder">
-    </div>
-    <div class="name-tag">Item Name</div>
-  </div>
-
-  <div class="card">
-    <div class="image-wrapper">
-      <img src="assets/person.jpg" alt="Placeholder">
-    </div>
-    <div class="name-tag">Item Name</div>
-  </div>
-
-  <div class="card">
-    <div class="image-wrapper">
-      <img src="assets/person.jpg" alt="Placeholder">
-    </div>
-    <div class="name-tag">Item Name</div>
+    <h2 id="profile-title"></h2>
+    <p id="profile-desc"></p>
+    <script>
+      // Use fallback values if localStorage is empty
+      document.getElementById('profile-img').src = localStorage.getItem('profileImage') || 'assets/person.jpg';
+      document.getElementById('profile-title').textContent = localStorage.getItem('profileTitle') || 'Unknown Creator';
+      document.getElementById('profile-desc').textContent = localStorage.getItem('profileDesc') || 'No description available.';
+    </script>
   </div>
 </div>
   

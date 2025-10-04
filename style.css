@@ -136,7 +136,7 @@ nav > .nav-container > ul > li:first-child {
   background-color: white;
 }
 /* text */
--text-container {
+.text-container {
   box-sizing: border-box;
   max-width: 1060px;
   margin: 0 auto;
